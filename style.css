@@ -1,0 +1,377 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button:focus {
+  outline: none;
+  border: none;
+}
+
+header {
+  background-color: rgb(121, 190, 252);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  height: 12vh;
+  align-items: center;
+}
+
+header h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 500;
+  font-size: 2em;
+  color: aliceblue;
+  text-shadow: 2px 2px 2px rgb(172, 170, 170);
+}
+
+header button {
+  border-radius: 30px;
+  width: 9em;
+  height: 3em;
+  border: 2px aliceblue solid;
+  background-color: rgb(88, 170, 241);
+  color: white;
+}
+
+header button:hover {
+  border: 2px white solid;
+  outline: 3px rgb(88, 170, 241) solid;
+}
+
+.firstBody {
+  /* height: 40vh; */
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firstBody h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: orangered;
+}
+
+.firstBody button {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 3%;
+  height: 3.5em;
+  border-radius: 45px;
+  background-color: rgb(6, 136, 250);
+  color: aliceblue;
+  font-size: 1.1em;
+  border: 3px aliceblue solid;
+  outline: 2px rgb(6, 136, 250) solid;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.firstBody button:hover {
+  background-color: rgb(179, 220, 255);
+  color: rgb(6, 136, 250);
+  border: 3px rgb(6, 136, 250) solid;
+  transition: 800ms;
+  outline: 2px aliceblue solid;
+}
+
+.secondBody {
+  background-color: rgb(121, 190, 252);
+  height: 82vh;
+  position: relative;
+}
+
+.imgs {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  gap: 4%;
+  padding-top: 20px;
+}
+
+.imgs div {
+  width: 23%;
+  height: 15em;
+  border: 5px aliceblue solid;
+  outline: 2px rgba(0, 183, 255, 0.801) solid;
+  border-radius: 3%;
+}
+
+.imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+}
+
+.wish {
+  background-color: rgba(0, 0, 0, 0.349);
+  width: 17rem;
+  height: 22em;
+  border-radius: 9px;
+  padding: 7px;
+  position: absolute;
+  top: -20%;
+  left: 3%;
+  border: 2px rgba(255, 255, 255, 0.815) solid;
+}
+
+.wish p {
+  font-family: "Moon Dance", cursive;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 10%;
+  color: white;
+  text-shadow: 1px 1px 1px;
+}
+
+.counter {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.445);
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.counter {
+  display: none;
+}
+
+.innerCounter {
+  width: 40%;
+  height: 45%;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: -4%;
+  position: relative;
+}
+
+.innerCounter h2 {
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 4%;
+  color: rgb(6, 136, 250);
+}
+
+#cancel {
+  font-size: 2rem;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  color: white;
+}
+
+.showCounter {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  gap: 4%;
+  height: 30%;
+  background-color: rgb(6, 136, 250);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 8%;
+}
+
+.showCounter div {
+  width: 24%;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(6, 136, 250);
+}
+
+#theDay {
+  font: 1.3em "Abel", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 25px;
+  color: orangered;
+  display: none;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 10px;
+}
+
+.card {
+  flex: 1 1 300px;
+  max-width: 400px;
+  min-width: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  color: #333;
+}
+
+.venue-card {
+  background-color: #fff;
+}
+
+.venue-card .venue-details p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.venue-card .venue-details p:first-of-type {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rsvp-card {
+  background-color: #e8f7ff;
+}
+
+.rsvp-card .rsvp-title p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #0056b3;
+}
+
+.rsvp-card .rsvp-contacts p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.rsvp-card .rsvp-contacts span {
+  display: block;
+  font-size: 14px;
+  color: rgba(138, 140, 97, 0.879);
+  margin-top: 3px;
+}
+
+.Reception {
+  color: darkslateblue;
+}
+.marq {
+  color: darkslateblue;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.marq span {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  font-size: larger;
+}
+footer {
+  text-align: center;
+  margin-top: 10px;
+}
+footer span {
+  color: rgb(194, 93, 150);
+}
+footer h6 {
+  font-style: italic;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+footer p {
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 4em;
+  }
+  header h1 {
+    font-size: 0.9rem;
+    font-weight: 40px;
+  }
+
+  .firstBody h1 {
+    font-size: 1.4rem;
+  }
+
+  .firstBody button {
+    font-size: 0.9em;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 8%;
+  }
+
+  .wish {
+    width: 8rem;
+    height: 12em;
+    top: -2.5rem;
+  }
+
+  .wish p {
+    font-size: 1em;
+  }
+
+  .secondBody {
+    height: 100%;
+  }
+
+  .imgs {
+    width: 90%;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    gap: 4%;
+    row-gap: 14px;
+  }
+
+  .imgs div {
+    width: 48%;
+    height: 10em;
+  }
+
+  .innerCounter {
+    width: 95%;
+    height: 24rem;
+  }
+
+  .innerCounter h2 {
+    margin-top: 9%;
+  }
+
+  .showCounter {
+    height: 6.5em;
+  }
+
+  .showCounter div {
+    font-size: 0.7em;
+  }
+  .oncl {
+    margin-bottom: 3rem !important;
+  }
+}
