@@ -10,7 +10,7 @@ const cancelCounter = () => {
 
 // Countdown logic
 const countDown = () => {
-    let countDownDate = new Date('2025-02-01').getTime(); // Target date
+    let countDownDate = new Date('2025-02-08').getTime(); // Target date
     let now = new Date().getTime(); // Current date
     let difference = countDownDate - now; // Time difference in milliseconds
 
@@ -42,9 +42,8 @@ setInterval(countDown, 1000);
 document.getElementById('whatsappButton').addEventListener('click', function () {
     const phoneNumber = '+2349029789731'
     
-    const message = encodeURIComponent("Congratulations on your wedding! May your journey together be filled with endless love, laughter, and happiness. Wishing you both a lifetime of beautiful moments, shared dreams, and unwavering support for each other. Cheers to your forever!"
+    const message = encodeURIComponent("Congratulations on your wedding! May your journey together be filled with endless love, laughter, and happiness. Wishing you both a lifetime of beautiful moments, shared dreams, and unwavering support for each other. Cheers to your forever!");
 
-);
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappURL, '_blank');
 });
